@@ -30,6 +30,10 @@ const Titles = styled.h1`
 font-size: 25px;
 margin-top:20px;
 text-transform: uppercase;
+
+@media (max-width: 400px){
+font-size:15px;
+}
 `
 
 const ImgLinks = styled.img`
