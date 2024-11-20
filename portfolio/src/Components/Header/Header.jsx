@@ -18,6 +18,11 @@ width: 80px;
 border-radius: 20px;
 border:3px solid antiquewhite;
 padding: 2px;
+
+@media (max-width: 400px){
+    width: 50px;
+    border-radius: 10px;
+}
 `
 const HeaderContainer = styled.div`
 background-color: black;
@@ -36,6 +41,12 @@ border-radius: 5px;
 padding: 5px;
 width: 82px;
 text-transform:capitalize;
+
+@media(max-width: 400px){
+    width: 50px;
+    font-size: 12px;
+}
+
 &:hover{
 background-color:black;
 color: antiquewhite;
