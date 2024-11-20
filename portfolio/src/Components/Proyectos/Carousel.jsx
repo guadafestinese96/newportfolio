@@ -8,10 +8,13 @@ const CarouselImg = styled.img`
     border: 1px solid var(--colorPrimario);
     padding: 5px;
     opacity: 0;
-
     transition: 0.5s;
     &.loaded{
         opacity: 1;
+    }
+    @media (max-width: 420px){
+    width: 230px;
+    height: 320px;
     }
 `
 

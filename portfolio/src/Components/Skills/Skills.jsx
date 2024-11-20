@@ -48,12 +48,15 @@ display:flex;
 
 `
 const ContainerAll = styled.div`
-
 margin: 5px 0px 5px 0px;
 padding: 5px;
 width: 100vw;
 border-bottom: 2px solid var(--colorPrimario);
 border-top: 2px solid var(--colorPrimario);
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
 `
 const Titles = styled.h1`
 font-size: 25px;
