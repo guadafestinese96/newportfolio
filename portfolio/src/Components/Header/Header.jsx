@@ -41,6 +41,7 @@ border-radius: 5px;
 padding: 5px;
 width: 82px;
 text-transform:capitalize;
+text-align:center;
 
 @media(max-width: 400px){
     width: 50px;

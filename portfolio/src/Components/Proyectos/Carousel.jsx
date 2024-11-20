@@ -8,7 +8,7 @@ const CarouselImg = styled.img`
     border: 1px solid var(--colorPrimario);
     padding: 5px;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.2s;
     &.loaded{
         opacity: 1;
     }
