@@ -15,15 +15,18 @@ const links = [
 
 const Gif = styled.img`
 width: 90px;
+@media (max-width: 400px){
+    width: 60px;
+}
+`
+
+const GifContainer = styled.div`
 border-radius: 20px;
 border:3px solid white;
 background-color:antiquewhite;
-padding: 2px;
-
-@media (max-width: 400px){
-    width: 50px;
-    border-radius: 10px;
-}
+display:flex;
+justify-content:center;
+align-items:center;
 `
 const HeaderContainer = styled.div`
 background-color: rgb(0,0,0,0.5);
@@ -32,6 +35,7 @@ display:flex;
 justify-content: space-between;
 align-items:center;
 padding:10px;
+text-align:center;
 `
 const LiLinks = styled.li`
 color:black;
@@ -64,7 +68,9 @@ export default function Header() {
     return (
         <HeaderContainer>
             <NavLink to='/'>
-                <Gif src={memojiImg} alt='worker' />
+                <GifContainer>
+                    <Gif src={memojiImg} alt='worker' />
+                </GifContainer>
             </NavLink>
             <UlHeader className='ulHeader'>
                 {links.map((link, index) => (
