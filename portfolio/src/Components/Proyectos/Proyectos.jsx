@@ -50,6 +50,17 @@ display:flex;
 justify-content:center;
 align-items:center
 `
+const UnCarousel = styled.div`
+background-color: antiquewhite;
+border-radius: 5px;
+padding-top: 10px;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+margin: 10px;
+border: 1px solid black;
+`
 
 export default function Proyectos() {
 
@@ -58,7 +69,7 @@ export default function Proyectos() {
             <Titles>Proyectos</Titles>
             <CarouselContainer>
 
-                <div>
+                <UnCarousel>
                     <Carousel images={imagesWidi} />
                     <LinksContainerAll>
                         <Link to='https://github.com/guadafestinese96/widistore' target="_blank">
@@ -74,9 +85,9 @@ export default function Proyectos() {
                             </LinkContainer>
                         </Link>
                     </LinksContainerAll>
-                </div>
+                </UnCarousel>
 
-                <div>
+                <UnCarousel>
                     <Carousel images={imagesChupitraki} />
                     <LinksContainerAll>
                         <Link to='https://github.com/guadafestinese96/chupitraki-page' target="_blank">
@@ -93,7 +104,7 @@ export default function Proyectos() {
                         </Link>
                     </LinksContainerAll>
 
-                </div>
+                </UnCarousel>
 
 
             </CarouselContainer>

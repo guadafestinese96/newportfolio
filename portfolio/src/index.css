@@ -7,6 +7,8 @@
 }
 
 body {
+  background-image: url('./assets/fondoHorizontal.jpg');
+  background-size: cover;
   background-color: antiquewhite;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
