@@ -95,13 +95,13 @@ export default function Proyectos() {
                     <LinksContainerAll>
                         <Link to='https://github.com/guadafestinese96/chupitraki-page' target="_blank">
                             <LinkContainer>
-                                <p>Code</p>
+                                <P>Code</P>
                                 <ImgLinks src={imgLink} alt='imgLink' />
                             </LinkContainer>
                         </Link>
                         <Link to='https://distribuidora-chupitraki.vercel.app/' target="_blank">
                             <LinkContainer>
-                                <p>Page</p>
+                                <P>Page</P>
                                 <ImgLinks src={imgLink} alt='imgLink' />
                             </LinkContainer>
                         </Link>
