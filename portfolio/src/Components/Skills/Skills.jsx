@@ -27,6 +27,11 @@ background-color:white;
 border: 1px solid black;
 padding: 3px;
 border-radius: 5px;
+
+@media (max-width: 550px){
+width: 30px;
+height: 30px;
+}
 `
 
 const ContainerSkils = styled.div`
