@@ -1,7 +1,7 @@
 import workerGif from '../../assets/worker2.gif';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-
+import memojiImg from '../../assets/memoji.png';
 
 const links = [
     {
@@ -14,9 +14,10 @@ const links = [
 ]
 
 const Gif = styled.img`
-width: 80px;
+width: 90px;
 border-radius: 20px;
-border:3px solid antiquewhite;
+border:3px solid white;
+background-color:antiquewhite;
 padding: 2px;
 
 @media (max-width: 400px){
@@ -25,7 +26,7 @@ padding: 2px;
 }
 `
 const HeaderContainer = styled.div`
-background-color: black;
+background-color: rgb(0,0,0,0.5);
 color: white;
 display:flex;
 justify-content: space-between;
@@ -63,7 +64,7 @@ export default function Header() {
     return (
         <HeaderContainer>
             <NavLink to='/'>
-                <Gif src={workerGif} alt='worker' />
+                <Gif src={memojiImg} alt='worker' />
             </NavLink>
             <UlHeader className='ulHeader'>
                 {links.map((link, index) => (
