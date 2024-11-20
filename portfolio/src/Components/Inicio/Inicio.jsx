@@ -9,6 +9,7 @@ const TitleIndex = styled.h1`
   font-style: normal;
   font-size: 55px;
   padding-top: 10px;
+  text-shadow: 1px 1px 1px white;
 `
 const TitleDev = styled.h2`
 
