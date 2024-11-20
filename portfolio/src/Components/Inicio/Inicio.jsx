@@ -10,6 +10,10 @@ const TitleIndex = styled.h1`
   font-size: 55px;
   padding-top: 10px;
   text-shadow: 1px 1px 1px white;
+
+  @media (max-width: 400px){
+  font-size: 40px;
+  }
 `
 const TitleDev = styled.h2`
 
@@ -18,6 +22,10 @@ padding: 5px;
 font-size: 25px;
 letter-spacing: 0.1em;
 text-shadow: 1px 3px 1px antiquewhite;
+
+@media (max-width: 400px){
+  font-size: 15px;
+  }
 `
 
 export default function Inicio() {
