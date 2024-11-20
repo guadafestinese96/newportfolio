@@ -62,7 +62,9 @@ align-items:center;
 margin: 10px;
 border: 1px solid black;
 `
-
+const P = styled.p`
+color:black;
+`
 export default function Proyectos() {
 
     return (
@@ -75,13 +77,13 @@ export default function Proyectos() {
                     <LinksContainerAll>
                         <Link to='https://github.com/guadafestinese96/widistore' target="_blank">
                             <LinkContainer >
-                                <p>Code</p>
+                                <P>Code</P>
                                 <ImgLinks src={imgLink} alt='imgLink' />
                             </LinkContainer>
                         </Link>
                         <Link to='https://widistore.vercel.app/' target="_blank">
                             <LinkContainer>
-                                <p>Page</p>
+                                <P>Page</P>
                                 <ImgLinks src={imgLink} alt='imgLink' />
                             </LinkContainer>
                         </Link>
