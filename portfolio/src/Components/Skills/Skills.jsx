@@ -56,9 +56,9 @@ border-bottom: 2px solid var(--colorPrimario);
 border-top: 2px solid var(--colorPrimario);
 `
 const Titles = styled.h1`
-
-font-size: 20px;
+font-size: 25px;
 margin-top:20px;
+text-transform: uppercase;
 `
 export default function Skills() {
 

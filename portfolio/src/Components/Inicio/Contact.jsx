@@ -7,6 +7,13 @@ import styled from 'styled-components';
 const ContactImgs = styled.img`
 width: 30px;
 margin: 10px;
+background-color: antiquewhite;
+padding: 5px;
+border-radius: 5px;
+border: 1px solid black;
+&:hover{
+background-color: black;
+}
 `
 export default function Contact() {
     return (

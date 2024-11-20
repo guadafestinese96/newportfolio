@@ -27,8 +27,9 @@ flex-wrap:wrap;
 `
 
 const Titles = styled.h1`
-font-size: 20px;
+font-size: 25px;
 margin-top:20px;
+text-transform: uppercase;
 `
 
 const ImgLinks = styled.img`
