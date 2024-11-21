@@ -39,7 +39,7 @@ const ContainerSkils = styled.div`
 justify-content:center;
 align-items:center;
 display:flex;
-
+padding: 10px;
 @media (max-width:1100px){
   display: grid;
   grid-template-columns: repeat(9, 50px);

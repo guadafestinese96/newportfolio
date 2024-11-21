@@ -1,0 +1,20 @@
+@keyframes volteo {
+    0% {
+      transform: rotateY(0deg);  
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);  
+    }
+  }
+
+  .voltear {
+    animation: volteo 5s infinite; 
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    /* transform-style: preserve-3d;
+    perspective: 1000px;  */
+  }
