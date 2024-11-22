@@ -1,6 +1,7 @@
 import linkedinImg from '../../assets/linkedin.png'
 import wpImg from '../../assets/wp.png'
 import emailImg from '../../assets/email.png'
+import githubImg from '../../assets/githubImg.png'
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 
@@ -29,6 +30,10 @@ export default function Contact() {
 
             <NavLink to='mailto:festinese.guadalupe@gmail.com' target='_blank'>
                 <ContactImgs src={emailImg} alt="emailImg"/>
+            </NavLink>
+
+            <NavLink to='https://github.com/guadafestinese96' target='_blank'>
+                <ContactImgs src={githubImg} alt="githubImg"/>
             </NavLink>
 
         </div>
