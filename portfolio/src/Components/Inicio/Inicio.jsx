@@ -32,6 +32,7 @@ const IndexDiv = styled.div`
 display:flex; 
 justify-content:center;
 align-items:center;
+flex-direction:column;
 `
 
 const IndexImg = styled.img`
@@ -42,6 +43,7 @@ const DescriptionDiv = styled.div`
 width: 600px;
 display:flex;
 justify-content:center;
+flex-direction:column;
 align-items:center;
 `
 const PresentacionP = styled.div`
@@ -55,9 +57,14 @@ display:flex;
 justify-content:center;
 align-items:center;
 
+@media (max-width: 600px){
+width: 400px;
+}
+
 @media (max-width: 400px){
 width: 320px;
 }
+
 `
 const ContactDiv = styled.div`
 display:flex;
@@ -81,9 +88,6 @@ export default function Inicio() {
         </DescriptionDiv>
 
       </IndexDiv>
-
-      <Proyectos />
-      <Skills />
     </div>
 
   )
