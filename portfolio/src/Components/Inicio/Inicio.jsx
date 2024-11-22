@@ -8,7 +8,7 @@ import './Inicio.css'
 const TitleIndex = styled.h1`
   font-family: "Parisienne", cursive;
   font-weight: 400;
-  padding:10px;
+  padding:5px;
   font-style: normal;
   font-size: 55px;
   text-shadow: 1px 1px 1px white;
@@ -40,6 +40,9 @@ width:180px;
 margin:10px;
 background-color: rgb(0,0,0,0.2);
 filter:drop-shadow(5px 5px 1px white);
+@media (max-width: 400px){
+  width: 150px;
+  }
 `
 const DescriptionDiv = styled.div`
 width: 600px;
