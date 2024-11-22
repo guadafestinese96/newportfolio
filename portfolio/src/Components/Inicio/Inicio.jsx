@@ -40,6 +40,9 @@ margin:10px;
 `
 const DescriptionDiv = styled.div`
 width: 600px;
+display:flex;
+justify-content:center;
+align-items:center;
 `
 const PresentacionP = styled.div`
 text-align: justify;
@@ -66,14 +69,12 @@ export default function Inicio() {
   return (
     <div className="inicio">
       <IndexDiv>
+        <ContactDiv>
+          <TitleIndex>Guadalupe Festinese</TitleIndex>
+          <IndexImg className="voltear" src={memojiImg} alt='memojiImg' />
+        </ContactDiv>
 
         <DescriptionDiv>
-          <ContactDiv>
-            <TitleIndex>Guadalupe Festinese</TitleIndex>
-            <IndexImg className="voltear" src={memojiImg} alt='memojiImg' />
-          </ContactDiv>
-
-
           <TitleDev>Frontend Developer - React JS</TitleDev>
           <PresentacionP>Me gusta resolver problemas complejos de manera eficiente y siempre estoy en busca de nuevas tecnologías y herramientas para mejorar mis habilidades. Mi objetivo es construir aplicaciones que sean visualmente atractivas y también fáciles de utilizar y mantener. Estoy trabajando en proyectos personales para fortalecer mis habilidades y prepararme para poder aportarlas en un nuevo empleo. Tengo una gran capacidad de resolución de problemas, siempre busco la manera de llegar al objetivo establecido en el menor tiempo posible. Soy buena trabajando sola y en equipo, me adapto muy rápido.</PresentacionP>
           <Contact />
