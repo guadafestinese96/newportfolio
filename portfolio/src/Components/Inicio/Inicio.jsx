@@ -30,7 +30,7 @@ text-transform: uppercase;
 `
 const IndexDiv = styled.div`
 display:flex; 
-justify-content:space-around;
+justify-content:center;
 align-items:center;
 `
 
@@ -41,18 +41,25 @@ margin:10px;
 const DescriptionDiv = styled.div`
 width: 600px;
 `
-const PresentacionP = styled.p`
+const PresentacionP = styled.div`
 text-align: justify;
 background-color: antiquewhite;
 padding: 10px;
 border-radius: 10px;
 border: 1px solid black;
+margin: 10px;
+display:flex;
+justify-content:center;
+align-items:center;
+
+@media (max-width: 400px){
+width: 320px;
+}
 `
 const ContactDiv = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-
 `
 
 export default function Inicio() {
