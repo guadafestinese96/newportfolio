@@ -48,7 +48,7 @@ align-items:center;
 `
 const PresentacionP = styled.div`
 text-align: justify;
-background-color: antiquewhite;
+background-color: rgb(250,235,215, 0.7);
 padding: 10px;
 border-radius: 10px;
 border: 1px solid black;
