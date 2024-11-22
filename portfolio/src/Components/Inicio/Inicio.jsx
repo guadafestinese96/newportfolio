@@ -6,14 +6,14 @@ import memojiImg from '../../assets/memoji.png'
 import './Inicio.css'
 
 const TitleIndex = styled.h1`
-  font-family: "Parisienne", cursive;
+  font-family: "Monoton", sans-serif;
   font-weight: 400;
   padding:5px;
   font-style: normal;
-  font-size: 55px;
-  text-shadow: 1px 1px 1px white;
-  @media (max-width: 400px){
   font-size: 40px;
+  text-shadow: 2px 2px 1px white;
+  @media (max-width: 400px){
+  font-size: 25px;
   }
 `
 const TitleDev = styled.h2`
