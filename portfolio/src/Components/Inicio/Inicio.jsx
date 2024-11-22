@@ -8,9 +8,9 @@ import './Inicio.css'
 const TitleIndex = styled.h1`
   font-family: "Parisienne", cursive;
   font-weight: 400;
+  padding:10px;
   font-style: normal;
   font-size: 55px;
-  padding-top: 10px;
   text-shadow: 1px 1px 1px white;
   @media (max-width: 400px){
   font-size: 40px;
@@ -38,6 +38,8 @@ flex-direction:column;
 const IndexImg = styled.img`
 width:180px;
 margin:10px;
+background-color: rgb(0,0,0,0.2);
+filter:drop-shadow(5px 5px 1px white);
 `
 const DescriptionDiv = styled.div`
 width: 600px;
