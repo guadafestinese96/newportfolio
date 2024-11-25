@@ -31,7 +31,7 @@ width: 300px;
 }
 `
 const DescripcionCursos = styled.p`
-background-color:rgb(0,0,0,0.3);
+background-color:rgb(0,0,0,0.4);
 color:antiquewhite;
 width:500px;
 padding: 5px;
@@ -53,6 +53,9 @@ border-bottom: 2px solid antiquewhite;
 `
 const DiplomaTitles = styled.h2`
 margin: 5px;
+@media(max-width:400px){
+font-size:20px;
+}
 `
 const Titles = styled.h1`
 font-size: 25px;
