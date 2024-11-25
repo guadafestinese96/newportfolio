@@ -52,7 +52,7 @@ text-transform:capitalize;
 text-align:center;
 
 @media(max-width: 400px){
-    width: 50px;
+    width: 55px;
     font-size: 12px;
 }
 
