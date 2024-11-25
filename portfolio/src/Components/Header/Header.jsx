@@ -8,6 +8,9 @@ const links = [
         path: "/proyectos",
         label: "proyectos"
     }, {
+        path: "/estudios",
+        label: "estudios"
+    },{
         path: "/skills",
         label: "skills"
     }
