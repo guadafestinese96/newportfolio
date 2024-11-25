@@ -51,12 +51,6 @@ flex-direction:column;
 margin: 15px;
 border-bottom: 2px solid antiquewhite;
 `
-const DiplomaTitles = styled.h2`
-margin: 5px;
-@media(max-width:400px){
-font-size:15px;
-}
-`
 const Titles = styled.h1`
 font-size: 25px;
 margin-top:20px;
@@ -66,6 +60,13 @@ text-transform: uppercase;
 font-size:15px;
 }
 `
+const DiplomaTitles = styled.h2`
+margin: 5px;
+@media(max-width:400px){
+font-size:15px;
+}
+`
+
 
 export default function Estudios(){
     return(

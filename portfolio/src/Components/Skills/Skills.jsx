@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import apiImg from '../../assets/api.png'
 import cssImg from '../../assets/css.png'
 import htmlImg from '../../assets/html.png'
@@ -16,8 +17,10 @@ import vscImg from '../../assets/Vscode.png'
 import figmaImg from '../../assets/figma.png'
 import corelImg from '../../assets/corel-rbg.png'
 import canvaImg from '../../assets/canva-rbg.png'
-import styled from 'styled-components'
-
+import formikImg from '../../assets/formik.jpg'
+import npmImg from '../../assets/npm.jpg'
+import CarouselFigma from './CarouselFigma'
+import { NavLink } from 'react-router-dom'
 
 const Imgs = styled.img`
 height: 40px;
@@ -35,11 +38,11 @@ height: 30px;
 `
 
 const ContainerSkils = styled.div`
-
+display:flex;
 justify-content:center;
 align-items:center;
-display:flex;
 padding: 10px;
+
 @media (max-width:1100px){
   display: grid;
   grid-template-columns: repeat(9, 50px);
@@ -72,6 +75,25 @@ text-transform: uppercase;
 font-size:15px;
 }
 `
+const LinkProyecto = styled.p`
+background-color:rgb(0,0,0,0.5);
+color:antiquewhite;
+border:2px solid antiquewhite;
+border-radius:10px;
+padding: 5px;
+
+&:hover{
+background-color:antiquewhite;
+color: rgb(0,0,0,0.3);
+}
+`
+const FigmaDescription = styled.p`
+color:antiquewhite;
+background-color: rgb(0,0,0,0.3);
+padding: 5px;
+border-radius: 5px;
+margin: 5px;
+`
 export default function Skills() {
 
     return (
@@ -96,7 +118,18 @@ export default function Skills() {
                 <Imgs src={figmaImg} alt='figmaImg' />
                 <Imgs src={corelImg} alt='corelImg' />
                 <Imgs src={canvaImg} alt='canvaImg' />
+                <Imgs src={formikImg} alt='formikImg' />
+                <Imgs src={npmImg} alt='npmImg' />
             </ContainerSkils>
+
+            <h2>Figma</h2>
+            <FigmaDescription>Proyecto de Coderhouse - Curso Javascript - Tienda de WidiStore</FigmaDescription>
+            <FigmaDescription>Maquetado para pantalla Iphone y Desktop PC</FigmaDescription>
+            <CarouselFigma/>
+            <NavLink to='https://guadafestinese96.github.io/widistore.page/index.html' target='_blank'>
+            <LinkProyecto>Proyecto final en HTML y Javascript</LinkProyecto>
+            </NavLink>
+           
         </ContainerAll>
     )
 }
