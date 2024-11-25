@@ -65,6 +65,7 @@ const UlHeader = styled.ul`
 display:flex;
 justify-content:center;
 align-items:center;
+text-align:center;
 `
 
 export default function Header() {
