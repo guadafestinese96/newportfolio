@@ -93,6 +93,9 @@ background-color: rgb(0,0,0,0.3);
 padding: 5px;
 border-radius: 5px;
 margin: 5px;
+@media(max-width:400px){
+font-size:11px;
+}
 `
 export default function Skills() {
 
