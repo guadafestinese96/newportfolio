@@ -53,10 +53,11 @@ align-items:center;
 `
 const PresentacionP = styled.div`
 text-align: justify;
-background-color: rgb(250,235,215, 0.7);
+// background-color: rgb(250,235,215, 0.7);
+background-color: rgb(0,0,0,0.3);
+color:antiquewhite;
 padding: 10px;
 border-radius: 10px;
-border: 1px solid black;
 margin: 10px;
 display:flex;
 justify-content:center;
