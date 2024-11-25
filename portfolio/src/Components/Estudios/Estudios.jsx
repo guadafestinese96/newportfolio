@@ -54,7 +54,7 @@ border-bottom: 2px solid antiquewhite;
 const DiplomaTitles = styled.h2`
 margin: 5px;
 @media(max-width:400px){
-font-size:20px;
+font-size:15px;
 }
 `
 const Titles = styled.h1`
