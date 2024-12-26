@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const CarouselImg = styled.img`
     height: 400px;
-    width: 308px;
+    width: 280px;
     border-radius: 10px;
     border: 1px solid var(--colorPrimario);
     padding: 5px;
@@ -42,7 +42,12 @@ align-items:center;
 
 ` 
 
-export default function Carousel({images}) {
+const CarouselTitle = styled.h1`
+font-size: 15px;
+color: black;
+`
+
+export default function Carousel({images, title}) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(images[0]);
     const [loaded, setLoaded] = useState(false);
@@ -69,10 +74,13 @@ export default function Carousel({images}) {
     }
 
     return (
+        <div className="div">
+        <CarouselTitle>{title}</CarouselTitle>
         <CarouselContainer>
             <CarouselButton onClick={previous}>{"<"}</CarouselButton>
             <CarouselImg src={selectedImage} alt="." className={loaded ? "loaded" : ""} onLoad={() => setLoaded(true)} />
             <CarouselButton onClick={next}>{">"}</CarouselButton>
         </CarouselContainer>
+        </div>
     )
 }

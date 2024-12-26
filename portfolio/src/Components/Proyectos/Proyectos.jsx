@@ -1,5 +1,3 @@
-import Carousel from "./Carousel"
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import widi1 from '../../assets/widi1.png';
 import widi2 from '../../assets/widi2.png';
@@ -13,7 +11,6 @@ import chupitraki1 from '../../assets/chupitraki1.png';
 import chupitraki2 from '../../assets/chupitraki2.png';
 import chupitraki3 from '../../assets/chupitraki3.png';
 import chupitraki4 from '../../assets/chupitraki4.png';
-import imgLink from '../../assets/enlace.png'
 import widiDw1 from '../../assets/widi-dw1.jpg'
 import widiDw2 from '../../assets/widi-dw2.jpg'
 import widiDw3 from '../../assets/widi-dw3.jpg'
@@ -21,12 +18,17 @@ import widiDw4 from '../../assets/widi-dw4.jpg'
 import widiDw5 from '../../assets/widi-dw5.jpg'
 import widiDw6 from '../../assets/widi-dw6.jpg'
 import widiDw7 from '../../assets/widi-dw7.jpg'
-
+import chupitrakiNoCart1 from '../../assets/chupitraki-nocart1.jpg';
+import chupitrakiNoCart2 from '../../assets/chupitraki-nocart2.jpg';
+import chupitrakiNoCart3 from '../../assets/chupitraki-nocart3.jpg';
+import chupitrakiNoCart4 from '../../assets/chupitraki-nocart4.jpg';
+import chupitrakiNoCart5 from '../../assets/chupitraki-nocart5.jpg';
+import UnCarouselComponent from "./UnCarouselComponent";
 
 const imagesWidi = [widi1, widi2, widi3, widi4, widi5, widi6, widi7, widi8];
 const imagesChupitraki = [chupitraki1, chupitraki2, chupitraki3, chupitraki4];
 const imagesWidiDw = [widiDw1, widiDw2, widiDw3, widiDw4, widiDw5, widiDw6, widiDw7];
-
+const imagesChupitrakiNoCart = [chupitrakiNoCart1, chupitrakiNoCart2, chupitrakiNoCart3, chupitrakiNoCart4,chupitrakiNoCart5];
 
 const CarouselContainer = styled.div`
 display:flex;
@@ -45,100 +47,24 @@ font-size:15px;
 }
 `
 
-const ImgLinks = styled.img`
-width: 25px;
-margin-left:3px;
 
-`
-
-const LinkContainer = styled.div`
-display: flex;
-justify-content:center;
-align-items:center;
-margin: 10px;
-font-size:15px;
-font-family: 
-`
-const LinksContainerAll = styled.div`
-display:flex;
-justify-content:center;
-align-items:center
-`
-const UnCarousel = styled.div`
-background-color: antiquewhite;
-border-radius: 5px;
-padding-top: 10px;
-display: flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-margin: 10px;
-border: 1px solid black;
-`
-const P = styled.p`
-color:black;
-`
 export default function Proyectos() {
 
     return (
         <div>
             <Titles>Proyectos</Titles>
-            <CarouselContainer>
+            <CarouselContainer>  
 
-                <UnCarousel>
-                    <Carousel images={imagesWidi} />
-                    <LinksContainerAll>
-                        <Link to='https://github.com/guadafestinese96/widistore' target="_blank">
-                            <LinkContainer >
-                                <P>Code</P>
-                                <ImgLinks src={imgLink} alt='imgLink' />
-                            </LinkContainer>
-                        </Link>
-                        <Link to='https://widistore.vercel.app/' target="_blank">
-                            <LinkContainer>
-                                <P>Page</P>
-                                <ImgLinks src={imgLink} alt='imgLink' />
-                            </LinkContainer>
-                        </Link>
-                    </LinksContainerAll>
-                </UnCarousel>
+                <UnCarouselComponent images={imagesChupitrakiNoCart} title="Chupitraki" linkGithub={"https://github.com/guadafestinese96/distribuidorachupitraki/tree/main/chupitraki"} linkVercel={"https://distribuidorachupitraki.vercel.app/"}/>   
+                     
+                <UnCarouselComponent images={imagesWidi} title="Widistore con Carrito" linkGithub={"https://github.com/guadafestinese96/widistore"} linkVercel={"https://widistore.vercel.app/"}/>    
 
-                <UnCarousel>
-                    <Carousel images={imagesChupitraki} />
-                    <LinksContainerAll>
-                        <Link to='https://github.com/guadafestinese96/chupitraki-page' target="_blank">
-                            <LinkContainer>
-                                <P>Code</P>
-                                <ImgLinks src={imgLink} alt='imgLink' />
-                            </LinkContainer>
-                        </Link>
-                        <Link to='https://distribuidora-chupitraki.vercel.app/' target="_blank">
-                            <LinkContainer>
-                                <P>Page</P>
-                                <ImgLinks src={imgLink} alt='imgLink' />
-                            </LinkContainer>
-                        </Link>
-                    </LinksContainerAll>
-                </UnCarousel>
+                <UnCarouselComponent images={imagesChupitraki} title="Chupitraki con Carrito" linkGithub={"https://github.com/guadafestinese96/chupitraki-page"} linkVercel={"https://distribuidora-chupitraki.vercel.app/"}/>    
 
-                <UnCarousel>
-                    <Carousel images={imagesWidiDw} />
-                    <LinksContainerAll>
-                        <Link to='https://github.com/guadafestinese96/widistore.page' target="_blank">
-                            <LinkContainer>
-                                <P>Code</P>
-                                <ImgLinks src={imgLink} alt='imgLink' />
-                            </LinkContainer>
-                        </Link>
-                        <Link to='https://guadafestinese96.github.io/widistore.page/' target="_blank">
-                            <LinkContainer>
-                                <P>Page</P>
-                                <ImgLinks src={imgLink} alt='imgLink' />
-                            </LinkContainer>
-                        </Link>
-                    </LinksContainerAll>
-                </UnCarousel>
 
+                <UnCarouselComponent images={imagesWidiDw} title="Primera página de Widistore" linkGithub={"https://github.com/guadafestinese96/widistore.page"} linkVercel={"https://guadafestinese96.github.io/widistore.page/"}/>        
+
+            
 
             </CarouselContainer>
         </div>

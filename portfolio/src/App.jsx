@@ -9,7 +9,9 @@ import Estudios from './Components/Estudios/Estudios'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{
+      v7_startTransition: true,
+    }}>
       <Layout>
         <Routes>
           <Route path='/' element={<Inicio />} />
