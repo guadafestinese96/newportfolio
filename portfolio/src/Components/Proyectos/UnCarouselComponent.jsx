@@ -37,7 +37,7 @@ color:black;
 `
 
 
-export default function UnCarouselComponent({images, title, linkGithub, linkVercel}) {
+export default function UnCarouselComponent({images, title, linkGithub, linkPage}) {
     return (
         <UnCarousel>
             <Carousel images={images} title={title} />
@@ -48,7 +48,7 @@ export default function UnCarouselComponent({images, title, linkGithub, linkVerc
                         <ImgLinks src={imgLink} alt='imgLink' />
                     </LinkContainer>
                 </Link>
-                <Link to={linkVercel} target="_blank">
+                <Link to={linkPage} target="_blank">
                     <LinkContainer>
                         <P>Page</P>
                         <ImgLinks src={imgLink} alt='imgLink' />

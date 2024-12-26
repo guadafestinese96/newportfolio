@@ -21,6 +21,7 @@ import formikImg from '../../assets/formik.jpg'
 import npmImg from '../../assets/npm.jpg'
 import CarouselFigma from './CarouselFigma'
 import { NavLink } from 'react-router-dom'
+import CarouselHorizontal from './CarouselHorizontal'
 
 const Imgs = styled.img`
 height: 40px;
@@ -75,18 +76,7 @@ text-transform: uppercase;
 font-size:15px;
 }
 `
-const LinkProyecto = styled.p`
-background-color:rgb(0,0,0,0.5);
-color:antiquewhite;
-border:2px solid antiquewhite;
-border-radius:10px;
-padding: 5px;
 
-&:hover{
-background-color:antiquewhite;
-color: rgb(0,0,0,0.3);
-}
-`
 const FigmaDescription = styled.p`
 color:antiquewhite;
 background-color: rgb(0,0,0,0.3);
@@ -130,9 +120,6 @@ export default function Skills() {
             <FigmaDescription>Proyecto de Coderhouse - Curso Javascript - Tienda de WidiStore</FigmaDescription>
             <FigmaDescription>Maquetado para pantalla Iphone y Desktop PC</FigmaDescription>
             <CarouselFigma/>
-            <NavLink to='https://guadafestinese96.github.io/widistore.page/index.html' target='_blank'>
-            <LinkProyecto>Proyecto final en HTML y CSS</LinkProyecto>
-            </NavLink>
            
         </ContainerAll>
     )

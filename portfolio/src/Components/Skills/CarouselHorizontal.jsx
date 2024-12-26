@@ -1,8 +1,33 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
+import imgLink from '../../assets/enlace.png';
+
+const ImgLinks = styled.img`
+width: 25px;
+margin-left:3px;
+`
+
+const LinkContainer = styled.div`
+display: flex;
+justify-content:center;
+align-items:center;
+margin: 10px;
+font-size:15px;
+font-family: 
+`
+const LinksContainerAll = styled.div`
+display:flex;
+justify-content:center;
+align-items:center
+`
+
+const P = styled.p`
+color:black;
+`
 
 const CarouselImg = styled.img`
-    height: 400px;
+    height: 300px;
     width: auto;
     border-radius: 10px;
     border: 1px solid var(--colorPrimario);
@@ -40,9 +65,23 @@ display:flex;
 justify-content:center;
 align-items:center;
 
-` 
+`
 
-export default function CarouselHorizontal({images}) {
+const CarouselHorizontalContainer = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background-color:antiquewhite;
+border: 1px solid black;
+border-radius:5px;
+padding: 5px;
+margin: 10px;
+`
+const TitleProyecto = styled.h2`
+font-size:15px;
+`
+export default function CarouselHorizontal({ images, linkGithub, linkPage, titleProyecto }) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(images[0]);
     const [loaded, setLoaded] = useState(false);
@@ -69,10 +108,30 @@ export default function CarouselHorizontal({images}) {
     }
 
     return (
-        <CarouselContainer>
-            <CarouselButton onClick={previous}>{"<"}</CarouselButton>
-            <CarouselImg src={selectedImage} alt="." className={loaded ? "loaded" : ""} onLoad={() => setLoaded(true)} />
-            <CarouselButton onClick={next}>{">"}</CarouselButton>
-        </CarouselContainer>
+        <CarouselHorizontalContainer>
+            <TitleProyecto>{titleProyecto}</TitleProyecto>
+            <CarouselContainer>
+                <CarouselButton onClick={previous}>{"<"}</CarouselButton>
+                <CarouselImg src={selectedImage} alt="." className={loaded ? "loaded" : ""} onLoad={() => setLoaded(true)} />
+                <CarouselButton onClick={next}>{">"}</CarouselButton>
+            </CarouselContainer>
+
+            <LinksContainerAll>
+                <Link to={linkGithub} target="_blank">
+                    <LinkContainer >
+                        <P>Code</P>
+                        <ImgLinks src={imgLink} alt='imgLink' />
+                    </LinkContainer>
+                </Link>
+                <Link to={linkPage} target="_blank">
+                    <LinkContainer>
+                        <P>Page</P>
+                        <ImgLinks src={imgLink} alt='imgLink' />
+                    </LinkContainer>
+                </Link>
+            </LinksContainerAll>
+
+
+        </CarouselHorizontalContainer>
     )
 }

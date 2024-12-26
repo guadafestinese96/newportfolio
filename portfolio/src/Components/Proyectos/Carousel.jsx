@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { useState } from 'react';
 
 const CarouselImg = styled.img`
-    height: 400px;
-    width: 280px;
+    height: 350px;
+    width: 260px;
     border-radius: 10px;
     border: 1px solid var(--colorPrimario);
     padding: 5px;

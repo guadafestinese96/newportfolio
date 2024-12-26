@@ -14,12 +14,15 @@ import Carousel from '../Proyectos/Carousel';
 import styled from 'styled-components'
 import CarouselHorizontal from './CarouselHorizontal'
 
+
 const iphoneImgs = [iphone1, iphone2, iphone3, iphone4, iphone5, iphone6];
 const desktopImgs = [desktop1, desktop2, desktop3, desktop4, desktop5, desktop6];
 
 const IphoneContainer= styled.div`
 width: 250px;
-background-color: rgb(0,0,0,0.3);
+height: 374px;
+background-color: antiquewhite;
+border: 1px solid black;
 margin:10px;
 border-radius:5px;
 padding: 5px;
@@ -28,12 +31,7 @@ padding: 5px;
 width:200px;
 }
 `
-const DesktopContainer = styled.div`
-background-color: rgb(0,0,0,0.3);
-margin:10px;
-border-radius:5px;
-padding: 5px;
-`
+
 const CarouselFigmaContainer = styled.div`
 display: flex;
 justify-content:center;
@@ -47,9 +45,10 @@ export default function CarouselFigma() {
             <IphoneContainer>
             <Carousel images={iphoneImgs}/>
             </IphoneContainer>
-           <DesktopContainer>
-           <CarouselHorizontal images={desktopImgs}/>
-           </DesktopContainer>
+        
+           
+           <CarouselHorizontal images={desktopImgs} linkPage={"https://guadafestinese96.github.io/widistore.page/index.html"} linkGithub={"https://github.com/guadafestinese96/widistore.page"} titleProyecto="Widistore curso Desarrollo Web"/>
+        
         </CarouselFigmaContainer>
     )
 }
