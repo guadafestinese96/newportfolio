@@ -38,8 +38,7 @@ const CarouselImg = styled.img`
         opacity: 1;
     }
     @media (max-width: 420px){
-    width: 320px;
-    height: auto;
+    height:100px;
     }
 `
 
