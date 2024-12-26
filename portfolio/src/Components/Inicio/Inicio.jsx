@@ -1,5 +1,3 @@
-import Proyectos from "../Proyectos/Proyectos";
-import Skills from '../Skills/Skills'
 import styled from "styled-components";
 import Contact from "./Contact";
 import memojiImg from '../../assets/memoji.png'
