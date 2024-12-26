@@ -78,8 +78,8 @@ font-size:15px;
 `
 
 const FigmaDescription = styled.p`
-color:antiquewhite;
-background-color: rgb(0,0,0,0.3);
+color:black;
+background-color: antiquewhite;
 padding: 5px;
 border-radius: 5px;
 margin: 5px;
