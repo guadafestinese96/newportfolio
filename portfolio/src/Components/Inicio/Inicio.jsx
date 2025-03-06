@@ -13,8 +13,8 @@ const TitleIndex = styled.h1`
   font-style: normal;
   font-size: 70px;
   text-shadow: 5px 5px 1px antiquewhite;
-  @media (max-width: 400px) {
-    font-size: 45px;
+  @media (max-width: 500px) {
+    font-size: 50px;
   }
 `;
 const TitleDev = styled.h2`
@@ -25,7 +25,7 @@ const TitleDev = styled.h2`
   text-shadow: 1px 3px 1px antiquewhite;
   text-transform: uppercase;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 15px;
   }
 `;
@@ -62,7 +62,6 @@ const PresentacionP = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
 
   @media (max-width: 500px) {
     font-size: 13px;
