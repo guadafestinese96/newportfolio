@@ -71,22 +71,28 @@ const Titles = styled.h1`
 font-size: 25px;
 margin-top:20px;
 text-transform: uppercase;
+background-color:antiquewhite;
+width:100%;
+text-align:center;
+margin-bottom:20px;
 
 @media (max-width: 400px){
 font-size:15px;
 }
 `
 
+const Title2 = styled.h2`
+font-size: 15px;
+margin-bottom: 15px;
+`
+
 const FigmaDescription = styled.p`
 color:black;
-background-color: antiquewhite;
-padding: 5px;
+text-align:center;
 border-radius: 5px;
-margin: 5px;
-
-@media(max-width:400px){
 font-size:11px;
-}
+max-width: 300px;
+
 `
 export default function Skills() {
 
@@ -116,8 +122,8 @@ export default function Skills() {
                 <Imgs src={npmImg} alt='npmImg' />
             </ContainerSkils>
 
-            <h2>Figma</h2>
-            <FigmaDescription>Proyecto de Coderhouse - Curso Javascript - Tienda de WidiStore</FigmaDescription>
+            <Title2>Figma</Title2>
+            <FigmaDescription>Proyecto de Coderhouse - Curso Javascript</FigmaDescription>
             <FigmaDescription>Maquetado para pantalla Iphone y Desktop PC</FigmaDescription>
             <CarouselFigma/>
            

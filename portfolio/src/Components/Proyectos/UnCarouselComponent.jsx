@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import imgLink from '../../assets/enlace.png';
 
 const ImgLinks = styled.img`
-width: 25px;
+width: 20px;
 margin-left:3px;
 `
 
@@ -13,27 +13,38 @@ display: flex;
 justify-content:center;
 align-items:center;
 margin: 10px;
-font-size:15px;
-font-family: 
+font-size:10px;
+background-color: white;
+padding: 5px;
+border-radius: 10px;
+color: white;
+&:hover{
+border: 1px solid black;
+}
 `
 const LinksContainerAll = styled.div`
 display:flex;
 justify-content:center;
-align-items:center
+align-items:center;
 `
 const UnCarousel = styled.div`
 background-color: antiquewhite;
-border-radius: 5px;
+border-radius: 10px;
 padding-top: 10px;
 display: flex;
 flex-direction: column;
 justify-content:center;
 align-items:center;
+text-align: center;
 margin: 10px;
-border: 1px solid black;
+border: 1px solid rgba(0,0,0,0.5);
 `
 const P = styled.p`
 color:black;
+
+&:hover{
+font-weight: bold;
+}
 `
 
 

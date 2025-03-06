@@ -62,6 +62,10 @@ const Titles = styled.h1`
 font-size: 25px;
 margin-top:20px;
 text-transform: uppercase;
+background-color:antiquewhite;
+width:100%;
+text-align:center;
+margin-bottom:20px;
 
 @media (max-width: 400px){
 font-size:15px;

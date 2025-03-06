@@ -22,13 +22,13 @@ const CarouselButton = styled.button`
     background-color: black;
     color:white;
     height: 30px;
-    border-radius: 5px;
-    padding: 3px;
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
     display:flex;
     justify-content:center;
     align-items:center;
     margin: 5px;
-    border: 1px solid black;
+    border: none;
     &:hover{
     cursor:pointer;
     background-color: white;

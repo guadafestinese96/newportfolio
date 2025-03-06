@@ -1,3 +1,13 @@
-#root {
-  text-align: center;
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+body {
+  font-family: 'Poppins';
+}
+

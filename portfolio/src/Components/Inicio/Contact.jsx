@@ -4,54 +4,37 @@ import emailImg from '../../assets/email.png'
 import githubImg from '../../assets/githubImg.png'
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-import copyImg from '../../assets/copy.png';
-import Swal from 'sweetalert2';
+
+
+const ContactContainer = styled.div`
+background-color: rgba(0,0,0,0.5);
+width: 100%;
+bottom: 0;
+position: fixed;
+display: flex;
+justify-content: center;
+align-items:center;
+box-shadow: 20px 3px 20px rgba(0, 0, 0, 0.4);
+`
 
 const ContactImgs = styled.img`
-width: 30px;
+width: 20px;
 margin: 10px;
 background-color: antiquewhite;
 padding: 5px;
-border-radius: 5px;
-border: 1px solid black;
-&:hover{
-background-color: black;
-}
-`
-const ImgCopy = styled.img`
-width: 20px;
-filter:drop-shadow(1px 1px 1px rgb(0,0,0,0.5));
-margin-left: 5px;
-&:hover{
-cursor:pointer;
-}
-`
-const MailDiv = styled.div`
-display:flex;
-background-color: antiquewhite;
-padding: 5px;
-border-radius:5px;
-font-size:15px;
-justify-content:center;
-align-items:center;
+border-radius: 10px;
+border: 1px solid white;
+filter: drop-shadow(3px 3px 5px black);
 
+&:hover{
+background-color: rgba(0,0,0,0.5);
+}
 `
+
 export default function Contact() {
     return (
-        <div className="contact">
-            <MailDiv>
-                <p>festinese.guadalupe@gmail.com</p>
-                <CopyToClipboard text="festinese.guadalupe@gmail.com">
-                    <ImgCopy src={copyImg} alt='copyImg' onClick={()=>{
-                        Swal.fire({
-                            text: "Copiado",
-                            width: 300,
-                        });
-                    }}/>
-                </CopyToClipboard>
-            </MailDiv>
-
+        <ContactContainer>
+     
             <NavLink to='https://www.linkedin.com/in/guadalupe-festinese-bb05b82a4/' target="_blank">
                 <ContactImgs src={linkedinImg} alt='linkedinImg' />
 
@@ -71,6 +54,6 @@ export default function Contact() {
 
 
 
-        </div>
+        </ContactContainer>
     )
 }

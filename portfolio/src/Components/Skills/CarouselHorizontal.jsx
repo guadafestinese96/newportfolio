@@ -13,8 +13,15 @@ display: flex;
 justify-content:center;
 align-items:center;
 margin: 10px;
-font-size:15px;
-font-family: 
+font-size:10px;
+background-color: white;
+padding: 5px;
+border-radius: 10px;
+color: white;
+&:hover{
+border: 1px solid black;
+}
+
 `
 const LinksContainerAll = styled.div`
 display:flex;
@@ -24,6 +31,9 @@ align-items:center
 
 const P = styled.p`
 color:black;
+&:hover{
+font-weight: bold;
+}
 `
 
 const CarouselImg = styled.img`
@@ -43,16 +53,16 @@ const CarouselImg = styled.img`
 `
 
 const CarouselButton = styled.button`
-    background-color: black;
+     background-color: black;
     color:white;
     height: 30px;
-    border-radius: 5px;
-    padding: 3px;
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
     display:flex;
     justify-content:center;
     align-items:center;
     margin: 5px;
-    border: 1px solid black;
+    border: none;
     &:hover{
     cursor:pointer;
     background-color: white;
@@ -75,10 +85,11 @@ background-color:antiquewhite;
 border: 1px solid black;
 border-radius:5px;
 padding: 5px;
-margin: 10px;
+margin: 20px;
 `
 const TitleProyecto = styled.h2`
 font-size:15px;
+
 `
 export default function CarouselHorizontal({ images, linkGithub, linkPage, titleProyecto }) {
     const [selectedIndex, setSelectedIndex] = useState(0);

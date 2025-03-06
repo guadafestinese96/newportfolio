@@ -31,9 +31,7 @@ width: 300px;
 }
 `
 const DescripcionCursos = styled.p`
-background-color:rgb(0,0,0,0.4);
-color:antiquewhite;
-width:500px;
+color:black;
 padding: 5px;
 margin: 5px;
 text-align: justify;
@@ -55,6 +53,10 @@ const Titles = styled.h1`
 font-size: 25px;
 margin-top:20px;
 text-transform: uppercase;
+background-color:antiquewhite;
+width:100%;
+text-align:center;
+margin-bottom:20px;
 
 @media (max-width: 400px){
 font-size:15px;
@@ -66,11 +68,16 @@ margin: 5px;
 font-size:15px;
 }
 `
-
+const EstudiosContainer = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+`
 
 export default function Estudios(){
     return(
-        <div className="estudiosContainer">
+        <EstudiosContainer>
             <Titles>Estudios</Titles>
             <LogoImg src={coderLogo} alt='coderLogo'/>
 
@@ -103,6 +110,6 @@ export default function Estudios(){
                 <Diplomas src={python} alt='python'/>
                 <DescripcionCursos>Números y cadenas, Colección de datos, Operadores y expresiones, Controladores de flujo, Conjuntos y diccionarios, Methods de colecciones, Entrada y salida de datos, Funciones, POO, Herencias, Módulos y paquetes, Github, Django, Playground</DescripcionCursos>                
             </DiplomasContainer>
-        </div>
+        </EstudiosContainer>
     )
 }
