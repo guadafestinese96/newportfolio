@@ -8,11 +8,11 @@ import Swal from "sweetalert2";
 
 const TitleIndex = styled.h1`
   font-family: "Qwitcher Grypen", cursive;
-  font-weight: 400;
+  font-weight: 600;
   padding: 5px;
   font-style: normal;
   font-size: 70px;
-  text-shadow: 2px 2px 1px white;
+  text-shadow: 5px 5px 1px antiquewhite;
   @media (max-width: 400px) {
     font-size: 45px;
   }
