@@ -64,7 +64,7 @@ const PresentacionP = styled.div`
   align-items: center;
   
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 13px;
     max-width:200px;
   }
@@ -92,6 +92,21 @@ const ImgCopy = styled.img`
 `;
 
 
+const Banner = styled.div`
+  
+  padding: 50px;
+  border-radius: 10px;
+  
+  @media (max-width: 500px) {
+    max-width: 300px;
+  }
+`
+  
+
+
+
+
+
 
 export default function Inicio() {
   return (
@@ -106,7 +121,7 @@ export default function Inicio() {
 
         <DescriptionDiv>
           <TitleDev>Frontend Developer - React JS</TitleDev>
-          <div className="banner">
+          <Banner className="banner">
 
         
           <PresentacionP>
@@ -119,7 +134,7 @@ export default function Inicio() {
             oportunidades para aportar soluciones innovadoras en el desarrollo
             web.
           </PresentacionP>  
-          </div>
+          </Banner>
         </DescriptionDiv>
 
         <MailDiv>
