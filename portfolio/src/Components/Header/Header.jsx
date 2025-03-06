@@ -42,20 +42,18 @@ height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover{
+  background-color: antiquewhite;
+  transition: 1s;
+  }
 `;
 
 const Gif = styled.img`
 
-  width: 50px;
-  height:50px;  
+  width: 60px;
+  height:60px;  
   mask-image: linear-gradient(black 80%,transparent );
   
-
-    &:hover{
-    width:60px;
-    height: 60px;
-    transition: 0.5s;
-    }
 `;
 
 

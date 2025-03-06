@@ -64,10 +64,6 @@ const PresentacionP = styled.div`
   align-items: center;
   
 
-  @media (max-width: 600px) {
-    width: 400px;
-  }
-
   @media (max-width: 400px) {
     font-size: 13px;
     max-width:200px;
