@@ -16,7 +16,7 @@ width: 400px;
 border-radius:5px;
 background-color:antiquewhite;
 padding: 5px;
-@media(max-width:400px){
+@media(max-width:500px){
 width: 300px;
 }
 `
@@ -26,7 +26,7 @@ border-radius:5px;
 background-color:antiquewhite;
 padding: 5px;
 
-@media(max-width:400px){
+@media(max-width:500px){
 width: 300px;
 }
 `
@@ -36,7 +36,7 @@ padding: 5px;
 margin: 5px;
 text-align: justify;
 
-@media(max-width:400px){
+@media(max-width:500px){
 width:300px;
 font-size:10px;
 }
@@ -58,13 +58,14 @@ width:100%;
 text-align:center;
 margin-bottom:20px;
 
-@media (max-width: 400px){
+@media (max-width: 500px){
 font-size:15px;
 }
 `
 const DiplomaTitles = styled.h2`
 margin: 5px;
-@media(max-width:400px){
+text-align:center;
+@media(max-width:500px){
 font-size:15px;
 }
 `
