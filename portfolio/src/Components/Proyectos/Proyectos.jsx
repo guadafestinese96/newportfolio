@@ -67,7 +67,7 @@ width:100%;
 text-align:center;
 margin-bottom:20px;
 
-@media (max-width: 400px){
+@media (max-width: 500px){
 font-size:15px;
 }
 `
