@@ -27,3 +27,25 @@
     /* transform-style: preserve-3d;
     perspective: 1000px;  */
   }
+
+  .btnDownload{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top:20px;
+    filter: drop-shadow(1px 2px 5px black);
+  }
+
+  .btnDownload a{
+    color: black;
+    font-weight: bold;
+  }
+
+  .btnDownload:hover{
+    background-color: black;
+    color:antiquewhite;
+  }
+  .btnDownload:hover a{
+    color:antiquewhite;
+  }

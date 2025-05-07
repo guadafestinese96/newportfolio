@@ -3,7 +3,7 @@ import Contact from "../Inicio/Contact";
 import styled from "styled-components";
 
 const ChildrenContainer = styled.div`
-padding-bottom: 50px;
+padding-bottom: 80px;
 
 `
 

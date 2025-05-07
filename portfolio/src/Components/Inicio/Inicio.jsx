@@ -15,6 +15,11 @@ const TitleIndex = styled.h1`
   font-style: normal;
   font-size: 70px;
   text-shadow: 5px 5px 1px antiquewhite;
+
+  @media (max-width: 600px) {
+    font-size: 50px;
+  }
+
   @media (max-width: 500px) {
     font-size: 30px;
   }
@@ -26,6 +31,11 @@ const TitleDev = styled.h2`
   letter-spacing: 0.1em;
   text-shadow: 1px 3px 1px antiquewhite;
   text-transform: uppercase;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
+
 
   @media (max-width: 500px) {
     font-size: 12px;
@@ -109,7 +119,7 @@ border: 3px solid antiquewhite;
 padding: 5px;
 margin-left:30px;
 
-@media(max-width:500px){
+@media(max-width:600px){
 width:90px;
 }
 `
@@ -158,6 +168,10 @@ export default function Inicio() {
             />
           </CopyToClipboard>
         </MailDiv>
+        <button className="btnDownload">
+          <a href="/CV_FestineseGuadalupe_dev_ats.pdf" download>DESCARGAR CV EN PDF</a>
+        </button>
+        
       </IndexDiv>
   );
 }
