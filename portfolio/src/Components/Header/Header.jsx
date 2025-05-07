@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { NavLink, useNavigate } from "react-router-dom";
 import memojiImg from "../../assets/memoji.png";
 import { useState } from "react";
+import guadaImg from '../../assets/fotoCv.jpg';
 
 const links = [
   {
@@ -49,11 +50,10 @@ height: 60px;
 `;
 
 const Gif = styled.img`
-
   width: 60px;
   height:60px;  
   mask-image: linear-gradient(black 80%,transparent );
-  
+  border-radius: 50%
 `;
 
 
@@ -91,7 +91,7 @@ color: black;
   background-color: antiquewhite;
   margin: 5px;
   border: 3px solid white;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px;
   width: 150px;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ export default function Header() {
     <HeaderContainer>
       <NavLink to="/">
         <GifContainer>
-          <Gif src={memojiImg} alt="worker" />
+          <Gif src={guadaImg} alt="worker" />
         </GifContainer>
       </NavLink>
 
@@ -123,7 +123,7 @@ export default function Header() {
       <SelectOptions
         onChange={handleSelectChange}
       >
-        <option value="#" >MENU</option>
+        <option value="/" >INICIO</option>
         <option value="/proyectos">Proyectos</option>
         <option value="/estudios">Estudios</option>
         <option value="/skills">Skills</option>

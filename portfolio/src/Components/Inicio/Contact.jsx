@@ -4,6 +4,7 @@ import emailImg from '../../assets/email.png'
 import githubImg from '../../assets/githubImg.png'
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
+import vercelImg from '../../assets/vercel.png';
 
 
 const ContactContainer = styled.div`
@@ -50,6 +51,10 @@ export default function Contact() {
 
             <NavLink to='https://github.com/guadafestinese96' target='_blank'>
                 <ContactImgs src={githubImg} alt="githubImg" />
+            </NavLink>
+
+            <NavLink to='https://vercel.com/guadalupes-projects-cb21e24d' target='_blank'>
+                <ContactImgs src={vercelImg} alt="vercelImg" />
             </NavLink>
 
 

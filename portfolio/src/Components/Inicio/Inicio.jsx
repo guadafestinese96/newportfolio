@@ -5,6 +5,8 @@ import "./Inicio.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import copyImg from "../../assets/copy.png";
 import Swal from "sweetalert2";
+import guadaImg from '../../assets/fotoCv.jpg';
+import bannerImg from '../../assets/fondoHorizontalFino.jpg';
 
 const TitleIndex = styled.h1`
   font-family: "Qwitcher Grypen", cursive;
@@ -14,7 +16,7 @@ const TitleIndex = styled.h1`
   font-size: 70px;
   text-shadow: 5px 5px 1px antiquewhite;
   @media (max-width: 500px) {
-    font-size: 50px;
+    font-size: 30px;
   }
 `;
 const TitleDev = styled.h2`
@@ -26,7 +28,7 @@ const TitleDev = styled.h2`
   text-transform: uppercase;
 
   @media (max-width: 500px) {
-    font-size: 15px;
+    font-size: 12px;
   }
 `;
 const IndexDiv = styled.div`
@@ -36,42 +38,49 @@ const IndexDiv = styled.div`
   flex-direction: column;
 `;
 
-const IndexImg = styled.img`
-  width: 180px;
-  margin: 10px;
-  background-color: rgb(0, 0, 0, 0.2);
-  filter: drop-shadow(5px 5px 1px white);
-  @media (max-width: 400px) {
-    width: 150px;
-  }
-`;
 const DescriptionDiv = styled.div`
-  width: 600px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 `;
+
 const PresentacionP = styled.div`
   text-align: center;
   background-color: rgb(250, 235, 215, 0.9);
   color: black;
   font-weight: 500;
   width:100%;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top:10px;
+  margin-bottom: 10px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
+    max-width:700px;
+    font-size:13px;
+  }
+
+   @media (max-width: 770px) {
     font-size: 13px;
-    max-width:200px;
+    max-width:500px;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 13px;
+    max-width:250px;
   }
 `;
+
 const ContactDiv = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin:10px;
 `;
 const MailDiv = styled.div`
   display: flex;
@@ -80,6 +89,7 @@ const MailDiv = styled.div`
   font-size: 15px;
   justify-content: center;
   align-items: center;
+  margin-top:20px;
 `;
 const ImgCopy = styled.img`
   width: 20px;
@@ -91,49 +101,46 @@ const ImgCopy = styled.img`
 `;
 
 
-const Banner = styled.div`
   
-  padding: 50px;
-  border-radius: 10px;
-  
-  @media (max-width: 500px) {
-    max-width: 300px;
-  }
+const FotoGuada = styled.img`
+width:130px;
+border-radius: 50%;
+border: 3px solid antiquewhite;
+padding: 5px;
+margin-left:30px;
+
+@media(max-width:500px){
+width:90px;
+}
 `
-  
-
-
-
 
 
 
 export default function Inicio() {
   return (
-    <div className="inicio">
       <IndexDiv>
         <ContactDiv>
-          <TitleIndex>Guadalupe Festinese</TitleIndex>
+          <div>
+            <TitleIndex>Guadalupe Festinese</TitleIndex>
+            <TitleDev>Web Developer Jr</TitleDev>
+          </div>
+          <div>
+          <FotoGuada src={guadaImg} alt="fotoGuada" />
+          </div>
           {/* <IndexImg className="voltear" src={memojiImg} alt='memojiImg' /> */}
         </ContactDiv>
+
+        
         
         
 
         <DescriptionDiv>
-          <TitleDev>Frontend Developer - React JS</TitleDev>
-          <Banner className="banner">
-
-        
           <PresentacionP>
-            Desarrolladora frontend con experiencia en React.js, JavaScript,
-            HTML5 y CSS3. Apasionada por crear aplicaciones web atractivas y
-            funcionales, con habilidades en diseño responsivo, optimización del
-            rendimiento y gestión de estados en React. Experiencia previa en
-            atención al cliente y gestión de stock, con capacidad para resolver
-            problemas de forma eficiente y trabajar en equipo. Busco
-            oportunidades para aportar soluciones innovadoras en el desarrollo
-            web.
-          </PresentacionP>  
-          </Banner>
+          Desarrolladora web en formación con enfoque en frontend.
+          <br/>Me destaco por mi persistencia, capacidad de resolver problemas rápidamente y motivación constante por aprender.
+          <br/> Busco mi primera experiencia en tecnología para seguir creciendo y aportar valor a un equipo dinámico.
+          </PresentacionP> 
+        
         </DescriptionDiv>
 
         <MailDiv>
@@ -152,6 +159,5 @@ export default function Inicio() {
           </CopyToClipboard>
         </MailDiv>
       </IndexDiv>
-    </div>
   );
 }

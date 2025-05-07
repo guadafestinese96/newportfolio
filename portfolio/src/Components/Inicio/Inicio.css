@@ -10,10 +10,14 @@
     }
   }
 
-  .banner{
+  /* .banner{
     background-image: url(../../assets/fondo.jpg);
     background-size: cover;
-  }
+    border: 1px solid black;
+    width:100%;
+   
+  } */
+
   
   .voltear {
     animation: volteo 5s infinite; 
