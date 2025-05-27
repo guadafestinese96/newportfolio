@@ -4,7 +4,7 @@ import UnEstudio from "./UnEstudio";
 
 const carreraDesReact = {
   titulo: "Carrera de Desarrollo Frontend React",
-  img: "public/carreraReact.png",
+  img: "carreraReact.png",
   descripcion:
     "En esta carrera aprendí a programar una tienda online con React y Javascript, comenzando por su maquetado en Figma y luego con HTML y CSS, posteriormente le dimos vida a la página utilizando Javascript en el segundo curso, y finalmente mejoramos y simplificamos mucho código con React en el último curso",
     logoAcademia: "coderLogo.png"
@@ -20,7 +20,7 @@ const dw = {
 
 const js = {
   titulo: "Javascript",
-  img: "public/javascript.png",
+  img: "javascript.png",
   descripcion:
     "Ciclos e iteraciones, Funciones, Objetos, Arrays, Funciones de orden superior, DOM, Eventos, Storage, JSON, Asincronía, Promesas, AJAX y Fetch, Frameworks",
     logoAcademia: "coderLogo.png"
@@ -28,7 +28,7 @@ const js = {
 
 const react = {
   titulo: "React JS",
-  img: "public/reactJs.png",
+  img: "reactJs.png",
   descripcion:
     "JSX, Componentes, Promesas, Asincronía, MAP, APIS, Workshop, Hooks, Children, Patrones, Routing, Eventos, Context, Firebase",
   logoAcademia: "coderLogo.png"
@@ -38,7 +38,7 @@ const python = {
   img: "python.png",
   descripcion:
     "Números y cadenas, Colección de datos, Operadores y expresiones, Controladores de flujo, Conjuntos y diccionarios, Methods de colecciones, Entrada y salida de datos, Funciones, POO, Herencias, Módulos y paquetes, Github, Django, Playground",
-    logoAcademia: "public/coderLogo.png"
+    logoAcademia: "coderLogo.png"
 };
 
 export default function Estudios() {
