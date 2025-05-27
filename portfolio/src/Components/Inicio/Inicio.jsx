@@ -114,7 +114,7 @@ const ImgCopy = styled.img`
   
 const FotoGuada = styled.img`
 width:130px;
-border-radius: 50%;
+border-radius: 10px;
 border: 3px solid antiquewhite;
 padding: 5px;
 margin-left:30px;

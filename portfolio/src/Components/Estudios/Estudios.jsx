@@ -1,116 +1,85 @@
-import coderLogo from '../../assets/coderLogo.png';
-import styled from 'styled-components';
-import desarrolloWeb from '../../assets/desarrolloWeb.png'
-import javascript from '../../assets/javascript.png'
-import reactJs from '../../assets/reactJs.png'
-import python from '../../assets/python.png'
-import carreraReact from '../../assets/carreraReact.png'
-import './Estudios.css'
+import "./Estudios.css";
+import "./UnEstudio";
+import UnEstudio from "./UnEstudio";
 
-const LogoImg = styled.img`
-width:90px;
-margin-top:20px;
-`
-const Diplomas = styled.img`
-width: 400px;
-border-radius:5px;
-background-color:antiquewhite;
-padding: 5px;
-@media(max-width:500px){
-width: 300px;
-}
-`
-const DiplomasCarrera = styled.img`
-width: 650px;
-border-radius:5px;
-background-color:antiquewhite;
-padding: 5px;
+const carreraDesReact = {
+  titulo: "Carrera de Desarrollo Frontend React",
+  img: "public/carreraReact.png",
+  descripcion:
+    "En esta carrera aprendí a programar una tienda online con React y Javascript, comenzando por su maquetado en Figma y luego con HTML y CSS, posteriormente le dimos vida a la página utilizando Javascript en el segundo curso, y finalmente mejoramos y simplificamos mucho código con React en el último curso",
+    logoAcademia: "public/coderLogo.png"
+};
 
-@media(max-width:500px){
-width: 300px;
-}
-`
-const DescripcionCursos = styled.p`
-color:black;
-padding: 5px;
-margin: 5px;
-text-align: justify;
+const dw = {
+  titulo: "Desarrollo Web",
+  img: "public/desarrolloWeb.png",
+  descripcion:
+    "HTML5, CSS, Responsive Web Design, Bootstrap, Librerías, Node JS, SASS, Flexbox, Grid, Animaciones, SEO, Github",
+    logoAcademia: "public/coderLogo.png"
+};
 
-@media(max-width:500px){
-width:300px;
-font-size:10px;
-}
-`
-const DiplomasContainer = styled.div`
-display: flex; 
-justify-content:center;
-align-items:center;
-flex-direction:column;
-margin: 15px;
-border-bottom: 2px solid antiquewhite;
-`
-const Titles = styled.h1`
-font-size: 25px;
-margin-top:20px;
-text-transform: uppercase;
-background-color:antiquewhite;
-width:100%;
-text-align:center;
-margin-bottom:20px;
+const js = {
+  titulo: "Javascript",
+  img: "public/javascript.png",
+  descripcion:
+    "Ciclos e iteraciones, Funciones, Objetos, Arrays, Funciones de orden superior, DOM, Eventos, Storage, JSON, Asincronía, Promesas, AJAX y Fetch, Frameworks",
+    logoAcademia: "public/coderLogo.png"
+};
 
-@media (max-width: 500px){
-font-size:15px;
-}
-`
-const DiplomaTitles = styled.h2`
-margin: 5px;
-text-align:center;
-@media(max-width:500px){
-font-size:15px;
-}
-`
-const EstudiosContainer = styled.div`
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-`
+const react = {
+  titulo: "React JS",
+  img: "public/reactJs.png",
+  descripcion:
+    "JSX, Componentes, Promesas, Asincronía, MAP, APIS, Workshop, Hooks, Children, Patrones, Routing, Eventos, Context, Firebase",
+  logoAcademia: "public/coderLogo.png"
+};
+const python = {
+  titulo: "Python",
+  img: "public/python.png",
+  descripcion:
+    "Números y cadenas, Colección de datos, Operadores y expresiones, Controladores de flujo, Conjuntos y diccionarios, Methods de colecciones, Entrada y salida de datos, Funciones, POO, Herencias, Módulos y paquetes, Github, Django, Playground",
+    logoAcademia: "public/coderLogo.png"
+};
 
-export default function Estudios(){
-    return(
-        <EstudiosContainer>
-            <Titles>Estudios</Titles>
-            <LogoImg src={coderLogo} alt='coderLogo'/>
+export default function Estudios() {
+  return (
+    <div className="estudiosContainer">
+      <h1 className="titles">Estudios</h1>
 
-            <DiplomasContainer>
-                <DiplomaTitles>Carrera de Desarrollo Frontend React</DiplomaTitles>
-                <DiplomasCarrera src={carreraReact} alt='carreraReact'/>
-                <DescripcionCursos>En esta carrera aprendí a programar una tienda online con React y Javascript, comenzando por su maquetado en Figma y luego con HTML y CSS, posteriormente le dimos vida a la página utilizando Javascript en el segundo curso, y finalmente mejoramos y simplificamos mucho código con React en el último curso</DescripcionCursos>
-            </DiplomasContainer>
+      <div className="contenedorUnEstudio">
+        <UnEstudio
+          titulo={carreraDesReact.titulo}
+          img={carreraDesReact.img}
+          descripcion={carreraDesReact.descripcion} logoAcademia = {carreraDesReact.logoAcademia}
+        />
 
-            <DiplomasContainer>
-                <DiplomaTitles>Desarrollo Web</DiplomaTitles>
-                <Diplomas src={desarrolloWeb} alt='desarrolloWeb'/>
-                <DescripcionCursos>HTML5, CSS, Responsive Web Design, Bootstrap, Librerías, Node JS, SASS, Flexbox, Grid, Animaciones, SEO, Github</DescripcionCursos>
-            </DiplomasContainer>
+        <UnEstudio
+          titulo={dw.titulo}
+          img={dw.img}
+          descripcion={dw.descripcion} logoAcademia = {dw.logoAcademia}
+        />
 
-            <DiplomasContainer>
-                <DiplomaTitles>Javascript</DiplomaTitles>
-                <Diplomas src={javascript} alt='javascript'/>
-                <DescripcionCursos>Ciclos e iteraciones, Funciones, Objetos, Arrays, Funciones de orden superior, DOM, Eventos, Storage, JSON, Asincronía, Promesas, AJAX y Fetch, Frameworks</DescripcionCursos>              
-            </DiplomasContainer>
+        <UnEstudio
+          titulo={js.titulo}
+          img={js.img}
+          descripcion={js.descripcion}
+          logoAcademia = {js.logoAcademia}
+        />
 
-            <DiplomasContainer>
-                <DiplomaTitles>React JS</DiplomaTitles>
-                <Diplomas src={reactJs} alt='reactJs'/>
-                <DescripcionCursos>JSX, Componentes, Promesas, Asincronía, MAP, APIS, Workshop, Hooks, Children, Patrones, Routing, Eventos, Context, Firebase</DescripcionCursos>                
-            </DiplomasContainer>
+        <UnEstudio
+          titulo={react.titulo}
+          img={react.img}
+          descripcion={react.descripcion}
+          logoAcademia = {react.logoAcademia}
+        />
 
-            <DiplomasContainer>
-                <DiplomaTitles>Python</DiplomaTitles>
-                <Diplomas src={python} alt='python'/>
-                <DescripcionCursos>Números y cadenas, Colección de datos, Operadores y expresiones, Controladores de flujo, Conjuntos y diccionarios, Methods de colecciones, Entrada y salida de datos, Funciones, POO, Herencias, Módulos y paquetes, Github, Django, Playground</DescripcionCursos>                
-            </DiplomasContainer>
-        </EstudiosContainer>
-    )
+        <UnEstudio
+          titulo={python.titulo}
+          img={python.img}
+          descripcion={python.descripcion}
+          logoAcademia = {python.logoAcademia}
+        />
+      </div>
+    </div>
+  );
 }

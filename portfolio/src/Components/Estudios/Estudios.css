@@ -1,0 +1,91 @@
+.diplomaTitles {
+  margin: 5px;
+  text-align: center;
+
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+}
+
+.estudiosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titles {
+  font-size: 25px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
+}
+
+.contenedorUnEstudio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.diplomasContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid antiquewhite;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  width: 600px;
+  height: 420px;
+
+  @media (max-width: 700px) {
+    width: 300px;
+    height: 320px;
+  }
+}
+
+.titleLogoContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logoAcademia {
+  width: 50px;
+  margin-right: 20px;
+  @media (max-width: 700px) {
+    width: 30px;
+  }
+}
+
+.descripcionCursos {
+  color: black;
+  padding: 5px;
+  text-align: justify;
+
+  @media (max-width: 700px) {
+    font-size: 10px;
+  }
+}
+
+.diplomasImg {
+  width: 400px;
+  border-radius: 5px;
+
+  @media (max-width: 700px) {
+    width: 280px;
+  }
+}
+

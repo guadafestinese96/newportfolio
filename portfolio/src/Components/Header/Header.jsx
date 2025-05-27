@@ -1,8 +1,5 @@
-import workerGif from "../../assets/worker2.gif";
 import styled from "styled-components";
 import { NavLink, useNavigate } from "react-router-dom";
-import memojiImg from "../../assets/memoji.png";
-import { useState } from "react";
 import guadaImg from '../../assets/fotoCv.jpg';
 
 const links = [
@@ -69,9 +66,9 @@ const LiLinks = styled.li`
   text-transform: capitalize;
   text-align: center;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     width: 55px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   &:hover {
@@ -84,6 +81,10 @@ const UlHeader = styled.ul`
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @media(max-width:500px){
+  flex-direction: column;
+  }
 `;
 
 const SelectOptions = styled.select`
@@ -102,14 +103,6 @@ color: black;
 
 
 export default function Header() {
-  const [selectOption, setSelectOption] = useState("menu");
-  console.log(selectOption);
-
-  const navigate = useNavigate();
-
-  const handleSelectChange = (e)=>{
-    navigate(e.target.value)
-  }
 
   return (
     <HeaderContainer>
@@ -119,19 +112,8 @@ export default function Header() {
         </GifContainer>
       </NavLink>
 
-       
-      <SelectOptions
-        onChange={handleSelectChange}
-      >
-        <option value="/" >INICIO</option>
-        <option value="/proyectos">Proyectos</option>
-        <option value="/estudios">Estudios</option>
-        <option value="/skills">Skills</option>
-      </SelectOptions>
 
-
-
-      {/* <UlHeader className="ulHeader">
+      <UlHeader className="ulHeader">
         {links.map((link, index) => (
           <NavLink to={link.path} key={index}>
             <LiLinks className="liHeader" key={index}>
@@ -139,7 +121,7 @@ export default function Header() {
             </LiLinks>
           </NavLink>
         ))}
-      </UlHeader> */}
+      </UlHeader>
     </HeaderContainer>
   );
 }
