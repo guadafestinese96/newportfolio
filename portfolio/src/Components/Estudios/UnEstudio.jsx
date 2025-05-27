@@ -2,7 +2,8 @@ import './Estudios.css';
 
 export default function UnEstudio({titulo, img, descripcion, logoAcademia}){
     return (
-        <div className='diplomasContainer'>
+        <div className="fondoDiplomas">
+            <div className='diplomasContainer'>
             <div className="titleLogoContainer">
                 <h2 className='diplomaTitles'>{titulo}</h2>
                 <img src={logoAcademia} alt="logoAcademia" className='logoAcademia'/>
@@ -11,5 +12,7 @@ export default function UnEstudio({titulo, img, descripcion, logoAcademia}){
             <img className='diplomasImg' src={img} alt='carreraReact'/>
             <p className='descripcionCursos'>{descripcion}</p>
         </div>
+        </div>
+        
     )
 }

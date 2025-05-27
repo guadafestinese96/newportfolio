@@ -7,6 +7,13 @@
   }
 }
 
+.fondoDiplomas{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
 .estudiosContainer {
   display: flex;
   justify-content: center;
@@ -60,6 +67,7 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  border-radius: 5px;
 }
 
 .logoAcademia {

@@ -6,7 +6,7 @@ const carreraDesReact = {
   titulo: "Carrera de Desarrollo Frontend React",
   img: "carreraReact.png",
   descripcion:
-    "En esta carrera aprendí a programar una tienda online con React y Javascript, comenzando por su maquetado en Figma y luego con HTML y CSS, posteriormente le dimos vida a la página utilizando Javascript en el segundo curso, y finalmente mejoramos y simplificamos mucho código con React en el último curso",
+    "En esta carrera aprendí a programar una tienda online comenzando por su maquetado en Figma y luego con HTML, CSS, Javascript y React JS complementando los tres cursos.",
     logoAcademia: "coderLogo.png"
 };
 
@@ -14,7 +14,7 @@ const dw = {
   titulo: "Desarrollo Web",
   img: "desarrolloWeb.png",
   descripcion:
-    "HTML5, CSS, Responsive Web Design, Bootstrap, Librerías, Node JS, SASS, Flexbox, Grid, Animaciones, SEO, Github",
+    "HTML5, CSS, Responsive Web Design, Bootstrap, Librerías, Node JS, SASS, Flexbox, Grid, Animaciones, SEO, Github.",
     logoAcademia: "coderLogo.png"
 };
 
@@ -22,7 +22,7 @@ const js = {
   titulo: "Javascript",
   img: "javascript.png",
   descripcion:
-    "Ciclos e iteraciones, Funciones, Objetos, Arrays, Funciones de orden superior, DOM, Eventos, Storage, JSON, Asincronía, Promesas, AJAX y Fetch, Frameworks",
+    "Ciclos e iteraciones, Funciones, Objetos, Arrays, Funciones de orden superior, DOM, Eventos, Storage, JSON, Asincronía, Promesas, AJAX y Fetch, Frameworks.",
     logoAcademia: "coderLogo.png"
 };
 
@@ -30,14 +30,14 @@ const react = {
   titulo: "React JS",
   img: "reactJs.png",
   descripcion:
-    "JSX, Componentes, Promesas, Asincronía, MAP, APIS, Workshop, Hooks, Children, Patrones, Routing, Eventos, Context, Firebase",
+    "JSX, Componentes, Promesas, Asincronía, MAP, APIS, Workshop, Hooks, Children, Patrones, Routing, Eventos, Context, Firebase.",
   logoAcademia: "coderLogo.png"
 };
 const python = {
   titulo: "Python",
   img: "python.png",
   descripcion:
-    "Números y cadenas, Colección de datos, Operadores y expresiones, Controladores de flujo, Conjuntos y diccionarios, Methods de colecciones, Entrada y salida de datos, Funciones, POO, Herencias, Módulos y paquetes, Github, Django, Playground",
+    "Números y cadenas, Colección de datos, Operadores y expresiones, Controladores de flujo, Conjuntos y diccionarios, Methods de colecciones, Entrada y salida de datos, Funciones, POO, Herencias, Módulos y paquetes, Github, Django, Playground.",
     logoAcademia: "coderLogo.png"
 };
 
