@@ -8,31 +8,31 @@ import vercelImg from '../../assets/vercel.png';
 
 
 const ContactContainer = styled.div`
-background-color: rgba(0,0,0,0.5);
+background-color: var(--color-secundario);
 width: 100%;
 bottom: 0;
 position: fixed;
 display: flex;
 justify-content: center;
 align-items:center;
-box-shadow: 20px 3px 20px rgba(0, 0, 0, 0.4);
+box-shadow: 20px 3px 20px var(--color-secundario);
 `
 
 const ContactImgs = styled.img`
 width: 20px;
-margin: 10px;
-background-color: antiquewhite;
-padding: 5px;
+margin: 8px;
+background-color: var(--color-primario);
+padding:8px;
 border-radius: 10px;
-border: 1px solid white;
-filter: drop-shadow(3px 3px 5px black);
+border: none;
+filter: drop-shadow(3px 3px 5px #000);
 
 &:hover{
-background-color: rgba(0,0,0,0.5);
+background-color: #fff;
 }
 `
 
-export default function Contact() {
+export default function Footer() {
     return (
         <ContactContainer>
      

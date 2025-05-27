@@ -23,29 +23,29 @@
     animation: volteo 5s infinite; 
     border-radius: 50%;
     padding: 10px;
-    border: 1px solid antiquewhite;
+    border: 1px solid var(--color-primario);
     /* transform-style: preserve-3d;
     perspective: 1000px;  */
   }
 
   .btnDownload{
-    background-color: antiquewhite;
-    border: 2px solid black;
-    padding: 5px;
+    background-color: var(--color-primario);
+    border: none;
+    padding: 15px;
     border-radius: 5px;
     margin-top:20px;
-    filter: drop-shadow(1px 2px 5px black);
   }
 
   .btnDownload a{
-    color: black;
+    color: #000;
     font-weight: bold;
   }
 
   .btnDownload:hover{
-    background-color: black;
-    color:antiquewhite;
+    background-color: #000;
+    color:var(--color-primario);
+    cursor: pointer;
   }
   .btnDownload:hover a{
-    color:antiquewhite;
+    color:var(--color-primario);
   }

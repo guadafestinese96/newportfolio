@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ContainerUnSkill = styled.div`
-background-color:antiquewhite;
+background-color:var(--color-primario);
 margin: 10px;
 border-radius: 10px;
 `
@@ -21,8 +21,8 @@ const Imgs = styled.img`
   height: 40px;
   width: 40px;
   margin: 5px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #fff;
+  border: 1px solid #000;
   padding: 3px;
   border-radius: 5px;
 

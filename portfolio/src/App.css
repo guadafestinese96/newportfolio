@@ -11,3 +11,7 @@ body {
   font-family: 'Poppins';
 }
 
+:root {
+  --color-primario: #fa9be0;
+  --color-secundario: rgba(0,0,0,0.5);
+}

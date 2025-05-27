@@ -3,10 +3,10 @@ import { useState } from 'react';
 
 const CarouselImg = styled.img`
     height: 350px;
-    width: 260px;
-    border-radius: 10px;
-    border: 1px solid var(--colorPrimario);
-    padding: 5px;
+    width: 240px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 10px;
     opacity: 0;
     transition: 0.2s;
     &.loaded{

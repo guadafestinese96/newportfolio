@@ -18,7 +18,7 @@ const links = [
 ];
 
 const HeaderContainer = styled.div`
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: var(--color-secundario);
   color: white;
   display: flex;
   heigth: 70px;
@@ -35,13 +35,13 @@ width: 60px;
 height: 60px;
   border-radius: 50%;
   padding: 10px;
-  border: 5px solid antiquewhite;
-  background-color: white;
+  border: 5px solid var(--color-primario);
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   &:hover{
-  background-color: antiquewhite;
+  background-color: var(--color-primario);
   transition: 1s;
   }
 `;
@@ -57,11 +57,11 @@ const Gif = styled.img`
 
 const LiLinks = styled.li`
   color: black;
-  background-color: antiquewhite;
+  background-color: var(--color-primario);
   margin: 5px;
-  border: 3px solid white;
+  border: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px;
   width: 82px;
   text-transform: capitalize;
   text-align: center;
@@ -72,8 +72,8 @@ const LiLinks = styled.li`
   }
 
   &:hover {
-    background-color: black;
-    color: antiquewhite;
+    background-color: #000;
+    color: var(--color-primario);
   }
 `;
 const UlHeader = styled.ul`
@@ -86,20 +86,6 @@ const UlHeader = styled.ul`
   flex-direction: column;
   }
 `;
-
-const SelectOptions = styled.select`
-color: black;
-  background-color: antiquewhite;
-  margin: 5px;
-  border: 3px solid white;
-  border-radius: 5px;
-  padding: 5px;
-  width: 150px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Poppins";
-  font-weight: bold;
-`
 
 
 export default function Header() {

@@ -39,7 +39,7 @@ const Titles = styled.h1`
   font-size: 25px;
   margin-top: 20px;
   text-transform: uppercase;
-  background-color: antiquewhite;
+  background-color: var(--color-primario);
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
@@ -55,7 +55,7 @@ const Title2 = styled.h2`
 `;
 
 const FigmaDescription = styled.p`
-  color: black;
+  color: #000;
   text-align: center;
   border-radius: 5px;
   font-size: 11px;
@@ -140,14 +140,14 @@ export default function Skills() {
           ))}
       </ContainerSkils>
 
-      <Title2>Figma</Title2>
+      {/* <Title2>Figma</Title2>
       <FigmaDescription>
         Proyecto de Coderhouse - Curso Javascript
       </FigmaDescription>
       <FigmaDescription>
         Maquetado para pantalla Iphone y Desktop PC
       </FigmaDescription>
-      <CarouselFigma />
-    </ContainerAll>
+      <CarouselFigma />*/}
+    </ContainerAll> 
   );
 }

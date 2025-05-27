@@ -1,5 +1,5 @@
 import Header from "../Header/Header";
-import Contact from "../Inicio/Contact";
+import Footer from "../Footer/Footer";
 import styled from "styled-components";
 
 const ChildrenContainer = styled.div`
@@ -12,7 +12,7 @@ export default function Layout({children}){
         <div>
             <Header/>
             <ChildrenContainer>{children}</ChildrenContainer>
-            <Contact/>
+            <Footer/>
         </div>
     )
 }

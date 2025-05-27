@@ -62,7 +62,7 @@ const Titles = styled.h1`
 font-size: 25px;
 margin-top:20px;
 text-transform: uppercase;
-background-color:antiquewhite;
+background-color:var(--color-primario);
 width:100%;
 text-align:center;
 margin-bottom:20px;
@@ -83,9 +83,6 @@ justify-content: center;
 align-items:center;
 `
 
-const TitleProyecto = styled.h2`
-font-size:15px;
-`
 
 
 export default function Proyectos() {
@@ -106,13 +103,13 @@ export default function Proyectos() {
             </CarouselContainer>
 
 
-            <CarouselHorizontalContainer>
+            {/* <CarouselHorizontalContainer>
                     
                     <CarouselHorizontal images={imagesWidiJS} linkGithub={"https://github.com/guadafestinese96/proyectoJS"} linkPage={"https://guadafestinese96.github.io/proyectoJS/"} titleProyecto="Widistore curso Javascript"/>
 
                     
                     <CarouselHorizontal images={desktopImgs} linkPage={"https://guadafestinese96.github.io/widistore.page/index.html"} linkGithub={"https://github.com/guadafestinese96/widistore.page"} titleProyecto="Widistore curso Desarrollo Web"/>
-            </CarouselHorizontalContainer>
+            </CarouselHorizontalContainer> */}
         </ProyectosContainer>
 
     )

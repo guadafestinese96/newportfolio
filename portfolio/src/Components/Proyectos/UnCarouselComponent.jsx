@@ -14,12 +14,13 @@ justify-content:center;
 align-items:center;
 margin: 10px;
 font-size:10px;
-background-color: white;
+background-color: #fff;
 padding: 5px;
 border-radius: 10px;
-color: white;
+color: #fff;
+border:1px solid #fff;
 &:hover{
-border: 1px solid black;
+border: 1px solid #000;
 }
 `
 const LinksContainerAll = styled.div`
@@ -28,7 +29,7 @@ justify-content:center;
 align-items:center;
 `
 const UnCarousel = styled.div`
-background-color: antiquewhite;
+background-color: var(--color-primario);
 border-radius: 10px;
 padding-top: 10px;
 display: flex;
@@ -37,10 +38,9 @@ justify-content:center;
 align-items:center;
 text-align: center;
 margin: 10px;
-border: 1px solid rgba(0,0,0,0.5);
 `
 const P = styled.p`
-color:black;
+color:#000;
 
 &:hover{
 font-weight: bold;

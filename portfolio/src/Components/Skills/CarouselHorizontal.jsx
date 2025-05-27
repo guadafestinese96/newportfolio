@@ -37,7 +37,7 @@ font-weight: bold;
 `
 
 const CarouselImg = styled.img`
-    height: 300px;
+    height: 100px;
     width: auto;
     border-radius: 10px;
     border: 1px solid var(--colorPrimario);
@@ -81,11 +81,12 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-background-color:antiquewhite;
-border: 1px solid black;
+background-color:var(--color-primario);
+border: none;
 border-radius:5px;
 padding: 5px;
 margin: 20px;
+width:320px;
 `
 const TitleProyecto = styled.h2`
 font-size:15px;

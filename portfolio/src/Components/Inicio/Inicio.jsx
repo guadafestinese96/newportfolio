@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Contact from "./Contact";
+import Contact from "../Footer/Footer";
 import memojiImg from "../../assets/memoji.png";
 import "./Inicio.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -14,7 +14,7 @@ const TitleIndex = styled.h1`
   padding: 5px;
   font-style: normal;
   font-size: 70px;
-  text-shadow: 5px 5px 1px antiquewhite;
+  text-shadow: 5px 5px 1px var(--color-primario);
 
   @media (max-width: 600px) {
     font-size: 50px;
@@ -25,11 +25,11 @@ const TitleIndex = styled.h1`
   }
 `;
 const TitleDev = styled.h2`
-  color: black;
+  color: #000;
   padding: 5px;
   font-size: 20px;
   letter-spacing: 0.1em;
-  text-shadow: 1px 3px 1px antiquewhite;
+  text-shadow: 1px 3px 1px var(--color-primario);
   text-transform: uppercase;
 
   @media (max-width: 600px) {
@@ -53,14 +53,14 @@ const DescriptionDiv = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 `;
 
 const PresentacionP = styled.div`
   text-align: center;
-  background-color: rgb(250, 235, 215, 0.9);
-  color: black;
+  background-color: var(--color-primario);
+  color: #000;
   font-weight: 500;
   width:100%;
   padding: 30px;
@@ -88,10 +88,12 @@ const PresentacionP = styled.div`
 
 const ContactDiv = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin:10px;
+  width:100%;
 `;
+
 const MailDiv = styled.div`
   display: flex;
   padding: 5px;
@@ -115,7 +117,7 @@ const ImgCopy = styled.img`
 const FotoGuada = styled.img`
 width:130px;
 border-radius: 10px;
-border: 3px solid antiquewhite;
+border: 3px solid var(--color-primario);
 padding: 5px;
 margin-left:30px;
 
